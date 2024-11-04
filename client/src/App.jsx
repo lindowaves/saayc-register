@@ -53,7 +53,14 @@ function App() {
 
               <input className="register-input" type="text" name="gender" placeholder="gender" onChange={handleChangeValues} />
               <input className="register-input" type="text" name="contact" placeholder="contact" onChange={handleChangeValues} />
-              <input className="register-input" type="text" name="reason" placeholder="reason" onChange={handleChangeValues} />
+
+              <select className="register-input option-input" name="reason" placeholder="reason" onChange={handleChangeValues}>
+                <option value="ming-coding">Ming coding</option>
+                <option value="staff">Staff</option>
+                <option value="clubhouse">Clubhouse</option>
+                <option value="knitting">Knitting club</option>
+              </select>
+
               <input className="register-input" type="text" name="timein" placeholder="timein" onChange={handleChangeValues} />
               <input className="register-input" type="text" name="timeout" placeholder="timeout" onChange={handleChangeValues} />
               <button type='submit' className="register-button" onClick={handleClickButton}>Sign Register</button>
