@@ -51,7 +51,10 @@ function App() {
               <input className="register-input" type="text" name="surname" placeholder="surname" onChange={handleChangeValues} />
               <input className="register-input" type="text" name="age" placeholder="age" onChange={handleChangeValues} />
 
-              <input className="register-input" type="text" name="gender" placeholder="gender" onChange={handleChangeValues} />
+              <select className="register-input"  name="gender" placeholder="gender" onChange={handleChangeValues}>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
               <input className="register-input" type="text" name="contact" placeholder="contact" onChange={handleChangeValues} />
 
               <select className="register-input option-input" name="reason" placeholder="reason" onChange={handleChangeValues}>
