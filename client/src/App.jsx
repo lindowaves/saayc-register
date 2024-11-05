@@ -4,6 +4,7 @@ import Axios from 'axios';
 import Card from './components/Card';
 import RegisterForm from './components/RegisterForm';
 import CardList from './components/CardList';
+import DataTable from './components/Columns';
 
 function App() {
     const baseUrl = 'http://localhost:3001';
@@ -46,7 +47,7 @@ function App() {
                 <br />
                 <RegisterForm handleChangeValues={handleChangeValues} handleClickButton={handleClickButton} />
                 <br />
-                <CardList games={games} />
+                <DataTable />
             </div>
         </div>
     );
