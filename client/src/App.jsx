@@ -45,6 +45,8 @@ function App() {
                 <br />
                 <RegisterForm handleChangeValues={handleChangeValues} handleClickButton={handleClickButton} />
                 <br />
+                <h3 className="title">Students / Staff</h3>
+                <br />
                 <DataTable />
             </div>
         </div>
