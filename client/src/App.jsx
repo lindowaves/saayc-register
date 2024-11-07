@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Axios from 'axios';
-import Card from './components/Card';
 import RegisterForm from './components/RegisterForm';
-import CardList from './components/CardList';
 import DataTable from './components/Columns';
 
 function App() {
