@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Axios from 'axios';
-import RegisterForm from './components/RegisterForm';
 import DataTable from './components/Columns';
+import RegistrationPage from './components/RegistrationPage';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 function App() {
     const baseUrl = 'http://localhost:3001';
+    const navigate = useNavigate();
+    const location = useLocation(); // Get current route
 
     const [values, setValues] = useState({});
     const [games, setGames] = useState([]);
@@ -38,18 +41,33 @@ function App() {
         });
     }, []);
 
+    // Check if we are on the registration page
+    const isRegistrationPage = location.pathname === '/RegistrationPage';
+
     return (
         <div className="App">
             <div className="container">
-                <h1 className="title">SAAYC ETWATWA PORTAL</h1>
-              <button type="button">Register new user</button>
+                {/* Render this content only if not on the RegistrationPage */}
+                {!isRegistrationPage && (
+                    <>
+                        <h1 className="title">SAAYC ETWATWA PORTAL</h1>
+                        
+                        <br />
+                        <h3 className="title">Students / Staff</h3>
+                        <br />
+                        <DataTable />
+                        <br />
 
-                <br />
-                <RegisterForm handleChangeValues={handleChangeValues} handleClickButton={handleClickButton} />
-                <br />
-                <h3 className="title">Students / Staff</h3>
-                <br />
-                <DataTable />
+                        <button className='actionButton' onClick={() => navigate('/RegistrationPage')}>
+                            Register new user
+                        </button>
+                    </>
+                )}
+
+                {/* Routes for the application */}
+                <Routes>
+                    <Route path="/RegistrationPage" element={<RegistrationPage handleChangeValues={handleChangeValues} handleClickButton={handleClickButton} />} />
+                </Routes>
             </div>
         </div>
     );

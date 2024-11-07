@@ -44,4 +44,13 @@ body{
   width: 100px;
 }
 
-
+.actionButton {
+  height: 38px;
+  width: 50%;
+  background-color:seagreen;
+  color: white ;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto
+}
