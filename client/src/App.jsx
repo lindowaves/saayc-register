@@ -42,6 +42,8 @@ function App() {
         <div className="App">
             <div className="container">
                 <h1 className="title">SAAYC ETWATWA PORTAL</h1>
+              <button type="button">Register new user</button>
+
                 <br />
                 <RegisterForm handleChangeValues={handleChangeValues} handleClickButton={handleClickButton} />
                 <br />
