@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css'
 
 const Banner = () => {
   return (
@@ -7,7 +8,7 @@ const Banner = () => {
         <div className="banner-content">
           <h1>Welcome to SAAYC ER Platform</h1>
           <p>Explore amazing Programmes with us. Join today!</p>
-          <a href="register.html" className="button">Sign In</a>
+          <a href="/register" className="button">Sign In</a>
         </div>
       </section>
 

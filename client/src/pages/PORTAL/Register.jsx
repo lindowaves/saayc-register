@@ -12,7 +12,6 @@ const Register = () => {
         <input type="text" name="gender" placeholder="Gender" required />
         <input type="text" name="timeIn" placeholder="Time In" required />
         <input type="text" name="timeOut" placeholder="Time Out" required />
-~
         <label htmlFor="reason">Reason for Visit</label>
         <select name="reason" id="reason" required>
           <option value="" disabled selected>
