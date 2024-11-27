@@ -6,8 +6,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('imG/ai\ bg\ 2.jpeg') no-repeat center center fixed;
+    background: url('img/AI\ BG.jpeg') no-repeat center center fixed;
     background-size: cover;
+    
   }
   
   
@@ -25,7 +26,7 @@ body {
     width: 150px;
     height: auto;
     cursor: move; 
-    animation: bounce 2s infinite ease-in-out;
+    animation: bounce 3s infinite ease-in-out;
   }
   
   
@@ -90,6 +91,22 @@ body {
     border-radius: 5px;
   }
   
+  input[name="timeIn"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[name="timeOut"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
   button {
     width: 90%;
     padding: 10px;
